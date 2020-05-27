@@ -13,8 +13,7 @@ import org.hibernate.cfg.Environment;
 import com.javalive.entity.Book;
 
 /**
- * @author javalive.com 
- * 		   In Hibernate, interceptors are used to inspect the
+ * @author javalive.com In Hibernate, interceptors are used to inspect the
  *         changes in entity’s property values before they are written and after
  *         they are read from a database.
  * 
@@ -30,7 +29,7 @@ import com.javalive.entity.Book;
  * 
  *         Session session = HibernateUtil.getSessionFactory() .withOptions()
  *         .interceptor(new LoggingInterceptor()) .openSession();
- *         
+ * 
  *         SessionFactory-scoped or global interceptors are used when
  *         SessionFactory is configured and these interceptors will be applied
  *         to applied to all Session opened from that SessionFactory. The
@@ -38,12 +37,12 @@ import com.javalive.entity.Book;
  *         SessionFactory.
  * 
  *         SessionFactory sessionFactory = metadata.getSessionFactoryBuilder()
- *         .applyInterceptor(new LoggingInterceptor()) .build(); 
- *         
- *         The following
- *         example demonstrates how to implement a custom interceptor to log the
- *         SQL queries and entity’s property values when an entity is saved.
- *         
+ *         .applyInterceptor(new LoggingInterceptor()) .build();
+ * 
+ *         The following example demonstrates how to implement a custom
+ *         interceptor to log the SQL queries and entity’s property values when
+ *         an entity is saved.
+ * 
  */
 public class HibernateUtil {
 
