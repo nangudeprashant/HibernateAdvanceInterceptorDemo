@@ -39,7 +39,7 @@ import com.javalive.entity.Book;
  *         SessionFactory sessionFactory = metadata.getSessionFactoryBuilder()
  *         .applyInterceptor(new LoggingInterceptor()) .build();
  * 
- *         The following example demonstrates how to implement a custom
+ *         This project demonstrates how to implement a custom
  *         interceptor to log the SQL queries and entity’s property values when
  *         an entity is saved.
  * 
